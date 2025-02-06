@@ -1,15 +1,14 @@
 package com.maina.MainaApp.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.ArrayList;
 
 @Entity
 @Table(name = "staff")
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Staff {
@@ -27,6 +26,7 @@ public class Staff {
     @Column(name = "role")
     private String role;
 
-    @ManyToMany
+    @OneToMany
     private ArrayList<Note> notes;
+
 }

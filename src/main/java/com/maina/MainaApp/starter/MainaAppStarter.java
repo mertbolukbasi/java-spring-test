@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EntityScan(basePackages = "com.maina.MainaApp")
-@ComponentScan(basePackages = "com.maina.MainaApp")
-@EnableJpaRepositories(basePackages = "com.maina.MainaApp")
+@EntityScan(basePackages = "com.maina")
+@ComponentScan(basePackages = "com.maina")
+@EnableJpaRepositories(basePackages = "com.maina")
 public class MainaAppStarter {
 
 	public static void main(String[] args) {

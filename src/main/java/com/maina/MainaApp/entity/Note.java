@@ -1,15 +1,14 @@
 package com.maina.MainaApp.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Date;
 
 @Entity
 @Table(name = "note")
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Note {
@@ -26,6 +25,7 @@ public class Note {
 
     @Column(name = "imageUrl")
     private String imageUrl;
+
 
 
 
